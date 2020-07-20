@@ -1,6 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 
+import styled from "styled-components";
+
+const Styleddk = styled.h1`
+  color: #212121;
+  margin-top: 350px;
+`;
+
 const withFetch = (action) => (Component) => {
   const Fetch = ({ action, amiibo, loading }) => {
     const [amiiboName, setAmiiboName] = useState("");
@@ -12,7 +19,7 @@ const withFetch = (action) => (Component) => {
     }, [amiiboName, action]);
 
     return loading ? (
-      <h1>Lok</h1>
+      <Styleddk>Loading...</Styleddk>
     ) : (
       <Component setAmiiboName={setAmiiboName} amiibo={amiibo}></Component>
     );

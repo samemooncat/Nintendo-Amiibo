@@ -55,7 +55,7 @@ const StyledSearchButton = styled.button`
 const StyledNoResultsText = styled.h1`
   color: white;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 200px;
 `;
 
 const Main = ({ amiibo, setAmiiboName }) => {
@@ -66,7 +66,7 @@ const Main = ({ amiibo, setAmiiboName }) => {
       <StyledContainerSearch>
         <StyledInput
           value={inputAmiibo}
-          placeholder="Search an amiibo like 'peach'"
+          placeholder="lok"
           onChange={(event) => setInputAmiibo(event.target.value)}
         />
         <StyledSearchButton onClick={() => setAmiiboName(inputAmiibo)}>
