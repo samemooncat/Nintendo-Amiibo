@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import styled from "styled-components";
@@ -30,10 +30,10 @@ const StyledInput = styled.input`
 `;
 
 const StyledContainerSearch = styled.div`
-  width: 100%; 
+  width: 100%;
   height: 80px;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   z-index: 10;
@@ -45,11 +45,17 @@ const StyledSearchButton = styled.button`
   width: 200px;
   border-radius: 5px;
   border: none;
-  background-color: #e74c3c;
+  background-color: #f39c12;
   color: white;
   font-size: 15px;
   padding: 5px;
   cursor: pointer;
+`;
+
+const StyledNoResultsText = styled.h1`
+  color: white;
+  text-align: center;
+  margin-top: 10%;
 `;
 
 const Main = ({ amiibo, setAmiiboName }) => {
@@ -78,7 +84,7 @@ const Main = ({ amiibo, setAmiiboName }) => {
             />
           ))
         ) : (
-          <h1>No results</h1>
+          <StyledNoResultsText>No results</StyledNoResultsText>
         )}
       </StyledContainer>
     </div>
