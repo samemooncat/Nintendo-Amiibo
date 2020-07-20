@@ -66,7 +66,7 @@ const Main = ({ amiibo, setAmiiboName }) => {
       <StyledContainerSearch>
         <StyledInput
           value={inputAmiibo}
-          placeholder="lok"
+          placeholder="Search an amiibo like 'peach'"
           onChange={(event) => setInputAmiibo(event.target.value)}
         />
         <StyledSearchButton onClick={() => setAmiiboName(inputAmiibo)}>
