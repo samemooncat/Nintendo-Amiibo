@@ -5,11 +5,11 @@ import styled from "styled-components";
 
 const StyledContainer = styled.div`
   width: 100%;
-  height: 120px
+  height: 120px;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #C2C2C2;
+  background-color: #fff;
 `;
 
 const Header = () => {
